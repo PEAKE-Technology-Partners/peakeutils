@@ -16,7 +16,7 @@ Powershell script to download (and optionally, run) other powershell scripts fro
 
 Usage:
 ```powershell
-.\download-from-github.ps1 [-Url "https://domain.tld/file.ps1"] | ([-Path "user/repo/file.ps1"] [-Token "github_token"]) [-Run] [-Params "-Arguments 'to pass to' -Downloaded 'script"]
+.\download-from-github.ps1 [-Url "https://domain.tld/file.ps1"] | ([-Path "user/repo/branch/file.ps1"] [-Token "github_token"]) [-Run] [-Params "-Arguments 'to pass to' -Downloaded 'script'"]
 ```
 Example:
 
