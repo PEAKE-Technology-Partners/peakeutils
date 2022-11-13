@@ -11,6 +11,8 @@ Filter LastPass entries through FZF on the commandline, then copy password to cl
 
 Requires: WSL/Linux/Mac, [lastpass-cli](https://github.com/lastpass/lastpass-cli), [fzf](https://github.com/junegunn/fzf)
 
+*Note:* WSL may need to make use of https://github.com/Konfekt/win-bash-xclip-xsel for clipboard integration.
+
 ## download-from-github.ps1
 Powershell script to download (and optionally, run) other powershell scripts from any URL or private GitHub repo
 
