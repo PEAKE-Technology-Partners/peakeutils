@@ -32,7 +32,7 @@ Output:
 ### Bonus
 Here's a ridiculous looking one-liner that will download & run the `download-from-github.ps1` script, which in turn downloads and runs the `test.ps1` script and passes arguments to it -- all without touching the filesystem:
 ```powershell
-icm -ScriptBlock ([scriptblock]::create("&{ $(irm "https://raw.githubusercontent.com/PEAKE-Technology-Partners/peakeutils/main/download-from-github.ps1") } -Url 'https://raw.githubusercontent.com/PEAKE-Technology-Partners/peakeutils/main/test.ps1' -Run -Params '-Name `"PEAKE Technology Partners`" -GetDate'"))
+icm -ScriptBlock ([scriptblock]::create("&{ $(irm "https://raw.githubusercontent.com/PEAKE-Technology-Partners/peakeutils/main/download-from-github.ps1") } -Url 'https://raw.githubusercontent.com/PEAKE-Technology-Partners/peakeutils/main/powershell/test.ps1' -Run -Params '-Name `"PEAKE Technology Partners`" -GetDate'"))
 ```
 
 Output:
