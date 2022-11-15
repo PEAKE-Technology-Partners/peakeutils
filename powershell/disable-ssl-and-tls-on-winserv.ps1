@@ -1,6 +1,15 @@
 <#
 Credit: https://www.jorgebernhardt.com/disable-ssl-and-tls-on-winserv/
 
+Compatibility Table:
+Windows Version | SSL 2.0 | SSL 3.0 | TLS 1.0 | TLS 1.1 | TLS 1.2
+Server 2003     | Y       | Y       | Y       | N       | N
+Server 2008     | Y       | Y       | Y       | Y       | Y
+Server 2008 R2  | Y       | Y       | Y       | Y       | Y
+Server 2012     | Y       | Y       | Y       | Y       | Y
+Server 2012 R2  | Y       | Y       | Y       | Y       | Y
+Server 2016     | Y       | Y       | Y       | Y       | Y
+
 Default action: Enable TLS 1.2
 #>
 [CmdletBinding()]
