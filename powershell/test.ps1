@@ -3,5 +3,11 @@ param([string]$name = "world", [switch]$getdate)
 if ($getdate) {
   Get-Date
 }
-New-Item -ItemType "Directory" -Path "C:\temp\" -Force
-Add-Content -Path "C:\temp\test.log" -Value "ran test script at $(get-date)"
+try {
+  New-Item -ItemType "Directory" -Path "C:\temp\" -Force
+  Add-Content -Path "C:\temp\test.log" -Value "ran test script at $(get-date)"
+}
+catch {
+  Write-Host "error: "
+  Write-Host $_
+}
