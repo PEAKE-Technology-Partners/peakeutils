@@ -17,7 +17,8 @@ Example with [Omni](https://github.com/alyssaxuu/omni) Browser Extension to sear
 ![tabs-omni](images/tabs-omni.png)
 
 ### Installation
-Install with a userscript extension like [ViolentMonkey](https://violentmonkey.github.io) or [TamperMonkey](https://www.tampermonkey.net) *(untested)*.
+Install a userscript extension like [ViolentMonkey](https://violentmonkey.github.io) or [TamperMonkey](https://www.tampermonkey.net) *(untested)*.
+Create a new script in the extension, copy and paste the [script content](connectwise-manage-tab-title.user.js) into the new script.
 Set the @match variable to the base Url of your Manage instance. Ex: `@match https://manage.mydomain.tld/*`
 
 ## Quick Search URLs
