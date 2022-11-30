@@ -4,7 +4,15 @@ custom scripts that aid in productivity
 ## connectwise-manage-tab-title.user.js
 A userscript that dynamically sets the browser tab title based on the current page heading in Connectwise Manage
 
-Install with a userscript extension like TamperMonkey or ViolentMonkey. Set the @match variable to the base Url of your Manage instance. Ex: `@match https://manage.mydomain.tld`
+Before:
+![tabs-before](images/tabs-before.png)
+After:
+![tabs-after](images/tabs-after.png)
+
+Install with a userscript extension like TamperMonkey or ViolentMonkey. Set the @match variable to the base Url of your Manage instance. Ex: `@match https://manage.mydomain.tld/*`
+
+## Search URLs
+[Available Here](quicksearch-urls.md)
 
 ## lp-fzf
 Filter LastPass entries through FZF on the commandline, then copy password to clipboard. 1000% faster than using the web ui.
