@@ -1,7 +1,7 @@
 # peakeutils
 custom scripts that aid in productivity
 
-## connectwise-manage-tab-title.user.js
+## Userscript: connectwise-manage-tab-title.user.js
 A userscript that dynamically sets the browser tab title based on the current page heading in Connectwise Manage
 
 Before:
@@ -12,25 +12,26 @@ After:
 
 ![tabs-after](images/tabs-after.png)
 
-Example with Omni Extension:
+Example with [Omni](https://github.com/alyssaxuu/omni) Browser Extension to search through open tabs:
 
 ![tabs-omni](images/tabs-omni.png)
 
 ### Installation
-Install with a userscript extension like TamperMonkey or ViolentMonkey. Set the @match variable to the base Url of your Manage instance. Ex: `@match https://manage.mydomain.tld/*`
+Install with a userscript extension like [ViolentMonkey](https://violentmonkey.github.io) or [TamperMonkey](https://www.tampermonkey.net) *(untested)*.
+Set the @match variable to the base Url of your Manage instance. Ex: `@match https://manage.mydomain.tld/*`
 
 ## Search URLs
-[Available Here](quicksearch-urls.md)
+Used in your browser to quickly lookup tickets & computers. [Details](quicksearch-urls.md)
 
-## lp-fzf
-Filter LastPass entries through FZF on the commandline, then copy password to clipboard. 1000% faster than using the web ui.
+## LastPass CLI util: lp-fzf
+Filter quickly search/filter LastPass on the commandline, then copy password to clipboard. 1000% faster than using the web ui/extension.
 
 Requires: WSL/Linux/Mac, [lastpass-cli](https://github.com/lastpass/lastpass-cli), [fzf](https://github.com/junegunn/fzf)
 
-*Note:* WSL may need to make use of https://github.com/Konfekt/win-bash-xclip-xsel for clipboard integration.
+*Note:* on WSL, you may need to use https://github.com/Konfekt/win-bash-xclip-xsel for Windows clipboard integration. Installation script to come.
 
-## download-from-github.ps1
-Powershell script to download (and optionally, run) other powershell scripts from any URL or private GitHub repo
+## Powershell: download-from-github.ps1
+Powershell script to download (and optionally, run) other powershell scripts from any URL or private GitHub repo (assuming you have a token).
 
 Usage:
 ```powershell
@@ -39,14 +40,14 @@ Usage:
 Example:
 
 ```powershell
-.\download-from-github.ps1 -Path "PEAKE-Technology-Partners/peakeutils/test.ps1" -Token "ghp_xxxxxxxxxxxxxxxxxx" -Run -Params "-Name Jon"
+.\download-from-github.ps1 -Path "PEAKE-Technology-Partners/peakeutils/powershell/test.ps1" -Token "ghp_xxxxxxxxxxxxxxxxxx" -Run -Params "-Name Jon"
 ```
 
 Output:
 `Hello, Jon`
 
 ### Bonus
-Here's a ridiculous looking one-liner that will download & run the `download-from-github.ps1` script, which in turn downloads and runs the `test.ps1` script and passes arguments to it -- all without touching the filesystem:
+Here's a one-liner that will download & run the `download-from-github.ps1` script, which in turn downloads and runs the [powershell/test.ps1](powershell/test.ps1) script and passes arguments to it -- all without touching the filesystem:
 ```powershell
 icm -ScriptBlock ([scriptblock]::create("&{ $(irm "https://raw.githubusercontent.com/PEAKE-Technology-Partners/peakeutils/main/download-from-github.ps1") } -Url 'https://raw.githubusercontent.com/PEAKE-Technology-Partners/peakeutils/main/powershell/test.ps1' -Run -Params '-Name `"PEAKE Technology Partners`" -GetDate'"))
 ```
