@@ -1,5 +1,5 @@
 # peakeutils
-custom scripts that aid in productivity
+Custom utilities that aid in productivity
 
 ## Userscript: connectwise-manage-tab-title.user.js
 A userscript that dynamically sets the browser tab title based on the current page heading in Connectwise Manage
@@ -20,18 +20,18 @@ Example with [Omni](https://github.com/alyssaxuu/omni) Browser Extension to sear
 Install with a userscript extension like [ViolentMonkey](https://violentmonkey.github.io) or [TamperMonkey](https://www.tampermonkey.net) *(untested)*.
 Set the @match variable to the base Url of your Manage instance. Ex: `@match https://manage.mydomain.tld/*`
 
-## Search URLs
-Used in your browser to quickly lookup tickets & computers. [Details](quicksearch-urls.md)
+## Quick Search URLs
+Used in your browser to quickly lookup tickets & search for computers. [Details](quicksearch-urls.md)
 
 ## LastPass CLI util: lp-fzf
-Filter quickly search/filter LastPass on the commandline, then copy password to clipboard. 1000% faster than using the web ui/extension.
+Search LastPass on the commandline, then copy password to clipboard. 1000% faster than using the web ui/extension.
 
 Requires: WSL/Linux/Mac, [lastpass-cli](https://github.com/lastpass/lastpass-cli), [fzf](https://github.com/junegunn/fzf)
 
 *Note:* on WSL, you may need to use https://github.com/Konfekt/win-bash-xclip-xsel for Windows clipboard integration. Installation script to come.
 
-## Powershell: download-from-github.ps1
-Powershell script to download (and optionally, run) other powershell scripts from any URL or private GitHub repo (assuming you have a token).
+## Powershell Script: download-from-github.ps1
+Powershell script to download (and optionally, run) other powershell scripts from any URL or GitHub repo. Downloading from a private GitHub repo requires a repo token.
 
 Usage:
 ```powershell

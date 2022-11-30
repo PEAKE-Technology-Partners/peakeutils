@@ -4,7 +4,7 @@ For use with Chrome/Firefox/etc Search Shortcuts or any tool that supports custo
 
 [How to Add Any Search Engine to Your Web Browser](https://www.howtogeek.com/114176/how-to-easily-create-search-plugins-add-any-search-engine-to-your-browser/)
 
-#### ConnectWise Manage Ticket ID
+#### ConnectWise Manage Ticket ID Lookup
 ```
 https://cw.peakesupport.com/v4_6_release/services/system_io/Service/fv_sr100_request.rails?service_recid=%s&companyName=peake
 ```
