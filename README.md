@@ -12,6 +12,11 @@ After:
 
 ![tabs-after](images/tabs-after.png)
 
+Example with Omni Extension:
+
+![tabs-omni](images/tabs-omni.png)
+
+### Installation
 Install with a userscript extension like TamperMonkey or ViolentMonkey. Set the @match variable to the base Url of your Manage instance. Ex: `@match https://manage.mydomain.tld/*`
 
 ## Search URLs
