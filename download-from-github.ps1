@@ -22,6 +22,9 @@ function Download-From-Github {
     if ($Url -eq "") {
       $Url = "https://raw.githubusercontent.com/$Path"
     }
+    if (!$Url.StartsWith("http")) {
+        $Url = "https://raw.githubusercontent.com/$Url"
+    }
     $headers = [System.Net.WebHeaderCollection]::new()
     $headers.Add("Authorization", "token $token")
     Download-File -Url $Url -Headers $headers
