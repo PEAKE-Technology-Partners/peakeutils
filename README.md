@@ -21,6 +21,9 @@ Install a userscript extension like [ViolentMonkey](https://violentmonkey.github
 Create a new script in the extension, copy and paste the [script content](connectwise-manage-tab-title.user.js) into the new script.
 Set the @match variable to the base Url of your Manage instance. Ex: `@match https://manage.mydomain.tld/*`
 
+## Userscript: connectwise-control-title.user.js
+The same principle as the script above, but for ConnectWise Control (ScreenConnect). Set the page title based on the currently selected computer.
+
 ## Quick Search URLs
 Used in your browser to quickly lookup tickets & search for computers. [Details](quicksearch-urls.md)
 
